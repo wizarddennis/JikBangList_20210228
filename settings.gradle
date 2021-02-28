@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "JikBangList_20210228"
