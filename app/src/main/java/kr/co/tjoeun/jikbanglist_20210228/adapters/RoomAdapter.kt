@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.TextView
 import kr.co.tjoeun.jikbanglist_20210228.R
 import kr.co.tjoeun.jikbanglist_20210228.datas.Room
 
@@ -25,10 +26,17 @@ class RoomAdapter(val mContext : Context,
 
         // 진짜로 한칸을 그려주자. 절대 null이 아니라는 표시로 '!!' 를 단다.
         val row = tempRow!!
+        val data = mList[position]
+        val priceTxt = row.findViewById<TextView>(R.id.priceTxt)
+        val AddressAndFloor = row.findViewById<TextView>(R.id.AddressAndFloor)
+        val descriptionTxt = row.findViewById<TextView>(R.id.descriptionTxt)
+
+        //설명 문구 : 있는 그대로.
+        descriptionTxt.text = data.description
+
 
         return row
     }
 
 }
 
-)

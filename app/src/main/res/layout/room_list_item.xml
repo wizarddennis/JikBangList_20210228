@@ -7,7 +7,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
 
         <ImageView
             android:layout_width="120dp"
@@ -20,9 +21,11 @@
             android:layout_height="match_parent"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center_vertical">
 
             <TextView
+                android:id="@+id/priceTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="8,000"
@@ -31,6 +34,7 @@
                 android:textColor="#FFA509"/>
 
             <TextView
+                android:id="@+id/AddressAndFloor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
@@ -38,6 +42,7 @@
                 android:textColor="@color/black"/>
 
             <TextView
+                android:id="@+id/descriptionTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="설명을 대충 다세요."
@@ -46,9 +51,6 @@
 
         </LinearLayout>
 
-
-
     </LinearLayout>
-
 
 </LinearLayout>
